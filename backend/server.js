@@ -1,3 +1,4 @@
+//server.js
 require('dotenv').config();
 
 const express = require('express');
@@ -11,10 +12,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// // Basic health check route
-// app.get('/', (req, res) => {
-//   res.json({ message: 'API is running!' });
-// });
 
 // Import suggestion routes
 const suggestionRoute = require('./routes/suggestions.js');
